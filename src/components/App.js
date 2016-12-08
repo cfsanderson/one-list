@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from '../styles/screen.sass'
+import styles from '../styles/screen.scss'
 
 class App extends Component {
 
@@ -27,10 +27,6 @@ class App extends Component {
     })
   }
 
-  onClick = (event) => {
-
-  }
-
   toggleComplete = (i) => {
     const items = this.state.items.slice()
     items[i].done = !items[i].done
@@ -47,7 +43,7 @@ class App extends Component {
     return <div className={styles.root}>
       <main>
         <header>
-          <h1>One List?!</h1>
+          <h1>One List</h1>
         </header>
         <ul>
           {items}
